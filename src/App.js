@@ -1,6 +1,6 @@
 import React from 'react'
 import './app.scss'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navigation from './components/navigation/Navigation.jsx';
 import Home from './components/home/Home.jsx'
 import About from './components/about/About.jsx';
@@ -28,7 +28,7 @@ export default function App() {
         <Testimonials />
         <Blog />
         <Contact />
-        {/* <Footer/> */}
+        <Footer className="footer"/>
       </div>
 
     </div>

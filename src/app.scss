@@ -3,7 +3,8 @@
   
   .section{
     width: 100%;
-    height: calc(100vh - 56px);
+    // height: calc(100vh - 56px);
+    height: 100%;
     background-color: red;
     position: relative;
     top: 56px;
@@ -12,12 +13,18 @@
      &::-webkit-scrollbar{
       display: none;
      };
+     scroll-behavior: smooth;
 
     > *{
       width: 100vw;
-      height: calc(100vh - 56px);
+      // height: calc(100vh - 56px);
+      height: 80%;
       scroll-snap-align: start;
 
+    }
+
+    .footer{
+      height: 20%;
     }
   }
   
