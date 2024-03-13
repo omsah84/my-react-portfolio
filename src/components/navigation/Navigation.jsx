@@ -1,7 +1,7 @@
 import React from 'react'
 import './navigation.scss'
 
-export default function Navigation() {
+export default function Navigation({ onClickHandler }) {
   return (
     <div className='navigation'>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -28,16 +28,17 @@ export default function Navigation() {
                 <a className="nav-link" href="#experience">Experience</a>
               </li>
               <li className="nav-item m-auto">
-              <a className="nav-link" href="#education">Education</a>
+                <a className="nav-link" href="#education">Education</a>
               </li>
               <li className="nav-item m-auto">
-              <a className="nav-link" href="#testimonials">Testimonials</a>
+                <a className="nav-link" href="#testimonials">Testimonials</a>
               </li>
               <li className="nav-item m-auto">
-              <a className="nav-link" href="#blog">Blog</a>
+                <a className="nav-link" href="#blog">Blog</a>
               </li>
               <li className="nav-item m-auto">
-              <a className="nav-link" href="#contact">Contact us</a>
+                <a className="nav-link" href="#contact">Contact us</a>
+                {/* <button onClick={onClickHandler}>Click me</button> */}
               </li>
             </ul>
           </div>

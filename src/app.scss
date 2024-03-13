@@ -1,11 +1,23 @@
+@import "./global.scss";
+
+.app.dark {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color */
+}
+
+.app.light {
+  background-color: #fff; /* Light background color */
+  color: #333; /* Dark text color */
+  
+}
 .app{
   height: 100vh;
   
   .section{
     width: 100%;
-    // height: calc(100vh - 56px);
-    height: 100%;
-    background-color: red;
+    height: calc(100vh - 56px);
+    // height: 100%;
+    // background-color: red;
     position: relative;
     top: 56px;
     scroll-snap-type: y mandatory;
@@ -20,7 +32,10 @@
       // height: calc(100vh - 56px);
       height: 80%;
       scroll-snap-align: start;
-
+      @include mobile{
+        height: 60%;
+        // background-color: red;
+      }
     }
 
     .footer{

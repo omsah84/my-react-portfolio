@@ -13,11 +13,20 @@ import Blog from './components/blog/Blog';
 import Contact from './components/contact/Contact.jsx';
 import Footer from './components/footer/Footer.jsx';
 // import Resume from './components/resume/Resume.jsx';
+import { useState } from 'react';
+
+
 
 export default function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleTheme = () => {
+    setIsDarkMode(prevMode => !prevMode);
+  };
+
   return (
-    <div className='app'>
-      <Navigation />
+    <div className={`app ${isDarkMode ? 'dark' : 'light'}`}>
+      <Navigation onClickHandler={toggleTheme} />
       <div className='section'>
         <Home />
         <About />
