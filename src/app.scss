@@ -1,15 +1,5 @@
 @import "./global.scss";
 
-.app.dark {
-  background-color: #333; /* Dark background color */
-  color: #fff; /* Light text color */
-}
-
-.app.light {
-  background-color: #fff; /* Light background color */
-  color: #333; /* Dark text color */
-  
-}
 .app{
   height: 100vh;
   
@@ -44,6 +34,7 @@
   }
   
 }
+
 
 
 

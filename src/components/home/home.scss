@@ -1,28 +1,73 @@
 @import "../../global.scss";
-.home{
-    // background-color: beige;
+
+.home {
     display: flex;
-    justify-content: center;
+    width  : 100%;
 
-    // @include mobile{
-    //     flex-direction: column;
-    // }
-
-    > *{ 
-        width: 100%;
-        height: 100%;
-    }
-    
-    .left{
-        background-color: red;
-        margin: auto;
-      
-        
+    @include mobile {
+        flex-direction: column;
     }
 
-    .right{
-        background-color: blue;
-       
+    .left {
+        width          : 60%;
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        padding-left   : 200px;
+
+        @include mobile {
+            // flex-direction: column;
+            padding   : 20px;
+            width     : 100%;
+            margin-top: 80px;
+        }
+
+        >* {
+            align-items: start;
+        }
+
+        spam {
+            color: red;
+        }
+
+        .icon {
+            >* {
+
+                font-size: 40px;
+                margin   : 5px 0px;
+            }
+        }
+
+        button {
+            border-radius: 10px;
+            padding      : 3px;
+        }
     }
-    
+
+    .right {
+        width: 40%;
+
+        @include mobile {
+            display: none;
+        }
+
+        .image {
+            width          : 100%;
+            height         : 100%;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+
+            img {
+                width : 350px;
+                height: 350px;
+
+                @include mobile {
+                    display: none;
+                    width  : 100%;
+                    height : 100%;
+                }
+            }
+        }
+    }
 }

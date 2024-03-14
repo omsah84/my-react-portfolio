@@ -18,15 +18,10 @@ import { useState } from 'react';
 
 
 export default function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleTheme = () => {
-    setIsDarkMode(prevMode => !prevMode);
-  };
-
+ 
   return (
-    <div className={`app ${isDarkMode ? 'dark' : 'light'}`}>
-      <Navigation onClickHandler={toggleTheme} />
+    <div className='app'>
+      <Navigation />
       <div className='section'>
         <Home />
         <About />
