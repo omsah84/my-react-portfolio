@@ -6,6 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import DownloadIcon from '@mui/icons-material/Download';
 
+
 export default function Home() {
   return (
     <div className='home' id='home'>
@@ -27,7 +28,7 @@ export default function Home() {
       </div>
       <div className='right'>
         <div className="image">
-          <img src={homeImage} alt="My Image" />
+          <img src={homeImage} alt='myimage' />
         </div>
       </div>
     </div>

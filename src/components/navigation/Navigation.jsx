@@ -3,6 +3,7 @@ import './navigation.scss'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import CodeIcon from '@mui/icons-material/Code';
 
 
 function Navigation() {
@@ -10,7 +11,7 @@ function Navigation() {
     <div className='navigation'>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+          <Navbar.Brand href="#home"><CodeIcon/> <spam>OMSAH</spam></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="m-auto">
