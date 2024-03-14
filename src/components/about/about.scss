@@ -1,3 +1,38 @@
+@import "../../global.scss";
+
+
 .about{
     background-color: aliceblue;
+    display:flex;
+    flex-direction:column;
+    // justify-content: center;
+    align-items: center;
+
+    h2{
+        text-align: center;
+        margin: 10px;
+    }
+    img{
+        width: 400px;
+        height: 400px;
+        margin: 20px;
+
+        @include mobile{
+            width: 300px;
+            height: 300px;
+            margin:10px;
+        }
+    }
+
+    .content{
+        text-align: center;
+        width: 80%;
+        font-size: large;
+        overflow-y: hidden;
+
+        @include mobile{
+            font-size: small;
+        }
+        
+    }
 }
