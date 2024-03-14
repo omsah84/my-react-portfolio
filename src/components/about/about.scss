@@ -1,43 +1,45 @@
 @import "../../global.scss";
 
 
-.about{
-    background-color: rgb(238, 244, 249);
-    display:flex;
-    flex-direction:column;
+.about {
+    background-color  : rgb(238, 244, 249);
+    display           : flex;
+    flex-direction    : column;
     // justify-content: center;
-    align-items: center;
+    align-items       : center;
 
-    h2{
+    h2 {
         text-align: center;
-        margin: 8px;
+        margin    : 8px;
         overflow-y: hidden;
-        @include mobile{
-            margin:0px;   
-        }   
+
+        @include mobile {
+            margin: 0px;
+        }
     }
-    img{
-        width: 350px;
+
+    img {
+        width : 350px;
         height: 350px;
         margin: 20px;
-        @include mobile{
+
+        @include mobile {
             margin: 7px;
-            width: 200px;
+            width : 200px;
             height: 200px;
-            
         }
     }
 
-    .content{
+    .content {
         text-align: center;
-        width: 60%;
-        font-size: large;
+        width     : 60%;
+        font-size : large;
         overflow-y: hidden;
-        @include mobile{
-            width: 90%;
-            font-size: 11px;
-            
+
+        @include mobile {
+            width    : 100%;
+            font-size: 15px;
+            padding:3px;
         }
-  
     }
 }
