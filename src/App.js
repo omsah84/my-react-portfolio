@@ -27,7 +27,7 @@ export default function App() {
       <div className='section'>
         <Home />
         <Testimonials />
-        {/* <About /> */}
+        <About />
         <Portfolio />
         <Skills />
         <Experience />

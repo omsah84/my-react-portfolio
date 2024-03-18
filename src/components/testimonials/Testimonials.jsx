@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './testimonials.scss'
 import Slider from "react-slick";
-import { BiArrowBack } from "react-icons/bi";
 import image from './homeImage.png'
 
 const data = [

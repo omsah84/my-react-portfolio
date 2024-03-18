@@ -1,6 +1,5 @@
 import React from 'react'
 import './portfolio.scss'
-import Slider from "react-slick";
 
 export default function Portfolio() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.scss'
-import imageAbout from './imageAbout.png'
+// import imageAbout from './imageAbout.png'
 
 export default function About() {
   return (
