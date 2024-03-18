@@ -12,6 +12,8 @@ import Testimonials from './components/testimonials/Testimonials.jsx';
 import Blog from './components/blog/Blog';
 import Contact from './components/contact/Contact.jsx';
 import Footer from './components/footer/Footer.jsx';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // import Resume from './components/resume/Resume.jsx';
 
 
@@ -24,12 +26,12 @@ export default function App() {
       <Navigation />
       <div className='section'>
         <Home />
-        <About />
+        <Testimonials />
+        {/* <About /> */}
         <Portfolio />
         <Skills />
         <Experience />
         <Education />
-        <Testimonials />
         <Blog />
         <Contact />
         <Footer className="footer"/>

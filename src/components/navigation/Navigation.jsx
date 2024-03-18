@@ -16,12 +16,12 @@ function Navigation() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="m-auto">
               <Nav.Link href="#home" className="m-auto" >Home</Nav.Link>
+              <Nav.Link href="#testimonials" className="m-auto">Testimonials</Nav.Link>
               <Nav.Link href="#about" className="m-auto">About us</Nav.Link>
               <Nav.Link href="#portfolio" className="m-auto">Portfolio</Nav.Link>
               <Nav.Link href="#skills" className="m-auto">Skills</Nav.Link>
               <Nav.Link href="#experience" className="m-auto">Experience</Nav.Link>
               <Nav.Link href="#education" className="m-auto">Education</Nav.Link>
-              <Nav.Link href="#testimonials" className="m-auto">Testimonials</Nav.Link>
               <Nav.Link href="#blog" className="m-auto">Blog</Nav.Link>
               <Nav.Link href="#contact" className="m-auto">Contact me</Nav.Link>
             </Nav>

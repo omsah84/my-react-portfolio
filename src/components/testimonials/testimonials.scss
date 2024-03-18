@@ -1,3 +1,33 @@
-.testimonials {
-    background-color: rgb(152, 42, 42);
+@import "../../global.scss";
+#testimonials {
+    // background-color: rgb(152, 42, 42);
+    // background-color: black;
+    .testimonials-items {
+        height          : 70%;
+        display         : flex;
+        justify-content : center;
+        align-items     : center;
+        height: 90%;
+        // background-color: blue;
+        overflow-y: hidden;
+        // overflow: hidden;
+
+        .slidera{
+            overflow-y: hidden;
+            // background-color: red;
+            // height: 100%;
+            // padding: 50px;
+            
+        }
+        
+        .testimonials-item {
+            //    position: relative;
+            background-color   : rgb(224, 219, 219);
+            .image {
+                width : 100px;
+                height: 100px;
+                margin: auto;
+            }
+        }
+    }
 }
