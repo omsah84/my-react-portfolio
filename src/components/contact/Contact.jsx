@@ -1,38 +1,68 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './contact.scss'
+import contactImage from './contactImage.png'
 
 export default function Contact() {
-  return (
-    <div className='contact' id='contact'>
-      <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i>huncyoms@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i>8986983491</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/wzzg.gzzw" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
-                        <a href="https://twitter.com/OMSAH_84?s=08" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                        <a href="https://instagram.com/omsah_84?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/omsah84" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/omsah84" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a href="image/OMSAH.pdf" download class="btn btn2"> Download CV</a>
+    const [isSubmited, setIsSubmited] = useState(true);
+
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        comment: ""
+    });
+
+    const onChanged = (e) => {
+        const { name, value } = e.target;
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
+    };
+
+    const onClickHandler = (data) => {
+        data.preventDefault();
+        setIsSubmited(!isSubmited)
+        console.log(formData);
+        setFormData({
+            name: '',
+            email: '',
+            comment: ''
+        });
+        
+        setTimeout(()=> setIsSubmited(true),1000);
+
+    };
+
+    return (
+        <div id='contact'>
+            <h2 className='text-center m-2'>Contact Us</h2>
+            <div className="container">
+                <div className="left">
+                    <img src={contactImage} alt='contactImg' />
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your name" required/>
-                        <input type="email" name="Email" placeholder="Your email" required/>
-                        <textarea name="Message" rows="6" placeholder="Your message" required> </textarea>
-                        <button type="submit" class="btn btn2"> Submit</button>
+
+                <div className="right">
+                    <form onSubmit={onClickHandler}>
+                        <div>
+                            <label>Name</label>
+                            <input type='text' className='card' name="name" required value={formData.name} onChange={onChanged} placeholder='Enter your name' /><br />
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <input type='email' className='card' name="email" required value={formData.email} onChange={onChanged}  placeholder='Enter your name' /><br />
+                        </div>
+                        <div>
+                            <label>Comment</label>
+                            <textarea type='text' className='card' name="comment" required value={formData.comment} onChange={onChanged}  placeholder='Enter your name' /><br />
+                        </div>
+                        <div className='submitbtn'>
+                            <button className='btn  bg-success'>Submit</button>
+                        </div>
+                       {isSubmited?<></> : <div className='text-danger m-1'>Successfully Submitted.</div>}
                     </form>
-                    <span id="msg"></span>
                 </div>
             </div>
-        </div>
-    </div>
 
-    </div>
-  )
+        </div>
+    )
 }

@@ -1,20 +1,23 @@
+@import "../../global.scss";
+
 .footer{
-    // background-color: black;
+    background-color: black;
     // width: 100vw;
     // height: 70px;
     .copyright{
         width:100%;
         text-align: center;
-        padding: 10px 0;
+        padding: 10px 2px;
         // background: #262626;
         font-weight: 300;
         margin-top: 10px;
         font-size: 30px;
         // background-color: red;
+
+        @include mobile{
+            font-size:20px;
+        }
     }
-    
-    .copyright i{
-        color: #ff004f;
-    }
+
     
 }
