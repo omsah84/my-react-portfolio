@@ -3,6 +3,7 @@ import './app.scss'
 import Navigation from './components/navigation/Navigation.jsx';
 import Home from './components/home/Home.jsx';
 import Testimonials from './components/testimonials/Testimonials.jsx'
+import Skills from './components/skills/Skills.jsx';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -25,7 +26,7 @@ export default function App() {
       />
       <Home/>
       <Testimonials/>
-      
+      <Skills/>
     </div>
   )
 }

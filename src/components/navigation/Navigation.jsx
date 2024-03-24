@@ -64,13 +64,13 @@ function Navigation({darkMode, handleDarkModeChange,toggle,toggleHandler}) {
         <div className="toggle" onClick={toggleHandler}><FontAwesomeIcon icon={faBars} /></div>
           <ul className={toggle ?  " listItems toggleOpen " :  'listItems toggleClose '}>
             <li><a href='#home' >Home</a></li>
+            <li><a href='#skills'>Skills</a></li>
             <li><a href='#about'>About Us</a></li>
             <li><a href='#contact'>Contact Me</a></li>
             <li><a href='#blog'>Blog</a></li>
             <li><a href='#education'>Education</a></li>
             <li><a href='#experience'>Experience</a></li>
             <li><a href='#myworks'>My Works</a></li>
-            <li><a href='#skills'>Skills</a></li>
           </ul>
         </div>
         <div className="icon">

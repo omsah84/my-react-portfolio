@@ -1,30 +1,41 @@
-.skills{
-    background-color: rgb(195, 194, 194);
-    .heading{
-        text-align: center;
-        margin-top: 15px;
-        padding-bottom: 30px;
+@import "../../global.scss";
+
+#skills {
+    width : 80%;
+    margin: 10px auto;
+
+    @include respond-to(small) {
+        width: 97%;
     }
 
-    .grid{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 40px;
+    .container {
+        display        : flex;
+        flex-wrap      : wrap;
+        justify-content: center;
 
-        .grid_item{
-            width: 100%;
-            height: 100%;
-            // background-color: red;
-            box-shadow: 1px 0px solid rgb(129, 52, 52);
-            padding: 30px;
-            margin: 30px;
-            text-align: center;
-            .icon{
-                width: 100px;
-                height: 100px;
+        .item {
+            margin    : 5px;
+            width     : 130px;
+            height    : fit-content;
+            box-shadow: 1px 1px 5px darkblue;
+            transition: 0.6s;
+
+            @include respond-to(x-small) {
+                width: 129px;
+            }
+
+            &:hover {
+                transform: scale(0.9, 0.9);
             }
         }
-        
+
+        .MuiRating-root {
+            svg {
+                path {
+                    stroke: rgb(150, 115, 115); // Change the border color to red
+                }
+            }
+        }
+
     }
 }
