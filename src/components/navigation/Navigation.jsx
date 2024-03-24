@@ -3,6 +3,8 @@ import './navigation.scss'
 import CodeIcon from '@mui/icons-material/Code';
 import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -51,25 +53,21 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
-function Navigation() {
-
-  const [darkMode, setDarkMode] = useState(false);
+function Navigation({darkMode, handleDarkModeChange}) {
   const [toggle, setToggle] = useState(false);
 
-  const handleDarkModeChange = () => {
-    setDarkMode(!darkMode);
-  };
 
   const toggleHandler = () =>{
     setToggle(!toggle);
   }
+
   return (
-    <div className={darkMode ? "bg-success navigation" : 'navigation'}>
+    <div className={darkMode ? "navigation" : 'navigation'}>
       <div className="container">
         <div className='logo'><CodeIcon /></div>
         <div className="list">
-        <div className="toggle" onClick={toggleHandler}>toggle</div>
-          <ul className={toggle? 'listItems toggleOpen':  'listItems toggleClose '}>
+        <div className="toggle" onClick={toggleHandler}><FontAwesomeIcon icon={faBars} /></div>
+          <ul className={toggle ?  " listItems toggleOpen " :  'listItems toggleClose '}>
             <li><a href='#'>Home</a></li>
             <li><a href='#'>About Us</a></li>
             <li><a href='#'>Contact Me</a></li>

@@ -2,3 +2,24 @@
 
 
 }
+
+
+.light-mode{
+    background-color:var(--dark);
+    color: var(--dark-color);
+    a{
+        color: var(--dark-color);
+        
+      }
+   
+    
+}
+
+.dark-mode{
+    background-color:var(--light);
+    
+    a{
+        color: var(--light-color);
+        
+      }
+}
