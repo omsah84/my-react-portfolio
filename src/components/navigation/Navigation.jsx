@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './navigation.scss'
 import CodeIcon from '@mui/icons-material/Code';
 import { styled } from '@mui/material/styles';
