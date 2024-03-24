@@ -6,9 +6,9 @@
 .light-mode {
   background-color: var(--dark);
   color           : var(--dark-color);
-
   a {
     color: var(--dark-color);
+    
   }
 }
 
@@ -18,9 +18,6 @@
 
   a {
     color: var(--light-color);
-    
-    @include respond-to(medium){
-     color:white;
-    }
+    font-size: 900;
   }
 }
