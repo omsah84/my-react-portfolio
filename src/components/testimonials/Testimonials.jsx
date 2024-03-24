@@ -39,8 +39,11 @@ const data = [
     name: "omsah",
     paragraph: "This guys is realadfasdfasdfasdffffffy wosome yara;ldjkf;alkdjs;alkdjfa;ldkfj;lakdjsf;aldkjsl;l"
   },
-
-
+  {
+    img: "image",
+    name: "omsah",
+    paragraph: "This guys is realadfasdfasdfasdffffffy wosome yara;ldjkf;alkdjs;alkdjfa;ldkfj;lakdjsf;aldkjsl;l"
+  },
 ];
 
 

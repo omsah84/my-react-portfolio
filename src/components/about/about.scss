@@ -11,20 +11,13 @@
         text-align: center;
         overflow-y: hidden;
 
-        @include mobile {
-            margin: 0px;
-        }
     }
 
     img {
 
         border-radius: 50%;
        
-        @include mobile {
-            margin: 7px;
-            width : 200px;
-            height: 200px;
-        }
+
     }
 
     .content {
@@ -33,10 +26,6 @@
         font-size : large;
         overflow-y: hidden;
 
-        @include mobile {
-            width    : 100%;
-            font-size: 15px;
-            padding  : 3px;
-        }
+
     }
 }
