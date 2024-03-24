@@ -1,8 +1,13 @@
+@import "../../global.scss";
 #testimonials {
     height: fit-content;
     width : 90%;
     margin: auto;
     // border: 3px solid red;
+
+    @include respond-to(medium){
+        padding: 2px;
+    }
 
     .testimonials-item {
         display         : flex;
@@ -27,5 +32,15 @@
 
     h5{
         text-align: center;
+        margin-top: 10px;
     }
 }
+
+
+.slick-prev {
+    left: 3px !important
+  }
+  
+  .slick-next {
+    right: -9px !important
+  }

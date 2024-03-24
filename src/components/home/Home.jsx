@@ -31,7 +31,7 @@ export default function Home() {
           <a href='mailto:huncyoms@gmail.com' target='-blank'> <EmailIcon /></a>
         </div>
         <div>
-          <button className='btn btn-primary' onClick={downloadResume}>Download Resume </button>
+          <button className='btn btn-primary mt-1' onClick={downloadResume}>Download Resume </button>
         </div>
 
       </div>
