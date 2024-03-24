@@ -45,17 +45,17 @@
                 &.toggleOpen {
                     @include respond-to (medium) {
                         background-color: rgb(77, 5, 210);
-                        border-radius: 10px;
-                        opacity: 0.9;
+                        border-radius   : 10px;
+                        opacity         : 0.9;
                         width           : 90vw;
-                        height: inherit;
+                        height          : inherit;
                         display         : block;
                         position        : absolute;
                         margin          : 5px 0px;
                         top             : 100%;
                         left            : 0;
                         right           : 0;
-                        transform       :translate(-50%, 0%);
+                        transform       : translate(-50%, 0%);
                         flex-direction  : column;
                         text-align      : center;
                         font-weight     : 700;
@@ -69,8 +69,8 @@
                     transition: 0.7s;
 
                     @include respond-to(medium) {
-                        margin       : 15px 0px;
-                        font-size    : 20px;
+                        margin          : 15px 0px;
+                        font-size       : 20px;
                         // border-bottom: 1px solid black;
                     }
 
@@ -79,12 +79,16 @@
                         font-size: 17px;
                     }
 
-                    &:hover {
-                        transform: scale(1.1, 1.4);
-                        box-shadow: 2px 2px 15px rgb(115, 15, 15);
-                        // padding: 1px;
+                    @include respond-to(medium) {
+                        &:hover {
+                            transform : scale(1.1, 1.4);
+                            box-shadow: 2px 2px 15px rgb(115, 15, 15);
+                        }
                     }
 
+                    &:hover{
+                        transform: scale(1.1,1.1);
+                    }
                     a {
                         text-decoration: none;
                         font-weight    : 400;
