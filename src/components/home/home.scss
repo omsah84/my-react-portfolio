@@ -2,6 +2,36 @@
 @import 'bootstrap';
 
 
+@keyframes scaleInOutBtn {
+    0% {
+        transform: scale(1); // Initial scale (normal size)
+        background-color: rgb(69, 243, 142);
+        color: black;
+    }
+    
+    50% {
+        transform: scale(0.9); // Scale in to 120% size
+        color: black;
+    }
+
+    100% {
+        transform: scale(1); // Scale back to normal size
+    }
+}
+@keyframes scaleInOut {
+    0% {
+        transform: scale(1); // Initial scale (normal size)
+    }
+    
+    50% {
+        transform: scale(0.9); // Scale in to 120% size
+    }
+
+    100% {
+        transform: scale(1); // Scale back to normal size
+    }
+}
+
 #home {
     display       : flex;
     flex-direction: row;
@@ -62,8 +92,10 @@
         }
 
         .btn {
+            animation: scaleInOutBtn 4s ease-in-out infinite;
             @include respond-to(x-small) {
                 font-size: 10px;
+                
             }
         }
     }
@@ -80,28 +112,13 @@
                 width     : 350px;
                 height    : 350px;
                 transition: 0.9s;
-
+                animation: scaleInOut 5s ease-in-out infinite;
+               
                 @include respond-to(small) {
                     width    : 200px;
                     height   : 200px;
-                    animation: scaleInOut 4s ease-in-out infinite;
                 }
             }
         }
-    }
-}
-
-
-@keyframes scaleInOut {
-    0% {
-        transform: scale(1); // Initial scale (normal size)
-    }
-
-    50% {
-        transform: scale(0.9); // Scale in to 120% size
-    }
-
-    100% {
-        transform: scale(1); // Scale back to normal size
     }
 }

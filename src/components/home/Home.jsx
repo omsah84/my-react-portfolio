@@ -19,7 +19,7 @@ export default function Home() {
   };
 
   return (
-    <div id='home' className='container-lg p-5' >
+    <div id='home' className='container-lg p-4' >
       <div className='left'>
         <h5>Hello, I am</h5>
         <h1>OM PRAKASH SAH</h1>
