@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import './app.scss'
 import Navigation from './components/navigation/Navigation.jsx';
 import Home from './components/home/Home.jsx';
+import Testimonials from './components/testimonials/Testimonials.jsx'
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [toggle, setToggle] = useState(false);
   const toggleHandler = () => {
     setToggle(!toggle);
@@ -23,6 +24,8 @@ export default function App() {
         toggleHandler={toggleHandler}
       />
       <Home/>
+      <Testimonials/>
+      
     </div>
   )
 }

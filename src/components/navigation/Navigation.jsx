@@ -71,7 +71,6 @@ function Navigation({darkMode, handleDarkModeChange,toggle,toggleHandler}) {
             <li><a href='#experience'>Experience</a></li>
             <li><a href='#myworks'>My Works</a></li>
             <li><a href='#skills'>Skills</a></li>
-            <li><a href='#testimonials'>Testimonials</a></li>
           </ul>
         </div>
         <div className="icon">

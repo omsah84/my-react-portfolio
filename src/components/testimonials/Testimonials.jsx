@@ -1,71 +1,102 @@
 import React from 'react'
 import './testimonials.scss'
 import Slider from "react-slick";
-import image from './homeImage.png'
+import Elon from "../../asset/Elon.png";
+import Bill from "../../asset/Bill Gates.png";
+import Bill1 from "../../asset/Bill Gates1.png";
+import Galileo from "../../asset/Galileo Galilei.png";
+import Galieo1 from "../../asset/Galileo Galilei1.png";
+import Jeff from "../../asset/Jeff Bezos.png";
+import Martindainguyen from "../../asset/Martindainguyen.png";
+import Richard from "../../asset/Richard Branson.png";
+import Sundar from "../../asset/Sundar Pichai.png";
+import Sundar1 from "../../asset/Sundar Pichai1.png";
 
 const data = [
   {
-    img: `homeImage.png`,
-    name: "omsah",
-    paragraph: "This guys is realy wosome yara;ldjkf;alkdjs;alkdjfa;ldkfj;lakdjsf;aldkjsl;l"
+    id: 1,
+    img: Bill1,
+    name: "Bill Gates",
   },
   {
-    img: "image",
-    name: "omsah",
-    paragraph: "This guys is realy wosome yara;ldjkf;alkdjs;alkdjfa;ldkfj;lakdjsf;aldkjsl;l"
+    id: 2,
+    img:Elon,
+    name: "Elon Musk",
   },
   {
-    img: "image",
-    name: "omsah",
-    paragraph: "This guys is realy wosome yara;ldjkf;alkdjs;alkdjfa;ldkfj;lakdjsf;aldkjsl;l"
+    id: 3,
+    img: Bill,
+    name: "Bill Gates",
   },
   {
-    img: "image",
-    name: "omsah",
-    paragraph: "This guys is realy wosome yara;ldjkf;alkdjs;alkdjfa;ldkfj;lakdjsf;aldkjsl;l"
+    id: 4,
+    img: Sundar,
+    name: "Sundar Pichai",
   },
   {
-    img: "image",
-    name: "omsah",
-    paragraph: "This guys is realy wosome yara;ldjkf;alkdjs;alkdjfa;ldkfj;lakdjsf;aldkjsl;l"
+    id: 5,
+    img: Galieo1,
+    name: "Galileo Galilei",
   },
   {
-    img: "image",
-    name: "omsah",
-    paragraph: "This guys is realy wosome yara;ldjkf;alkdjs;alkdjfa;ldkfj;lakdjsf;aldkjsl;l"
+    id: 6,
+    img: Bill,
+    name: "Bill Gates",
+
   },
   {
-    img: "image",
-    name: "omsah",
-    paragraph: "This guys is realadfasdfasdfasdffffffy wosome yara;ldjkf;alkdjs;alkdjfa;ldkfj;lakdjsf;aldkjsl;l"
+    id: 7,
+    img: Sundar1,
+    name: "Sundar Pichai",
   },
   {
-    img: "image",
-    name: "omsah",
-    paragraph: "This guys is realadfasdfasdfasdffffffy wosome yara;ldjkf;alkdjs;alkdjfa;ldkfj;lakdjsf;aldkjsl;l"
+    id: 8,
+    img: Galileo,
+    name: "Galileo Galilei",
+  },
+  {
+    id: 9,
+    img: Jeff,
+    name: "Jeff Bezos",
+  },
+  {
+    id: 10,
+    img: Martindainguyen,
+    name: "Martindainguyen",
+  },
+  {
+    id: 11,
+    img: Richard,
+    name: "Richard Branson",
   },
 ];
 
-
-
-
 export default function Testimonials() {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
     ltr: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          // dots: true
+        }
+      },
+      {
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+          // dots: true
         }
       },
       {
@@ -74,30 +105,22 @@ export default function Testimonials() {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+          // dots: true
         }
       },
-      
+
     ]
   };
   return (
     <div id='testimonials'>
-      <div className="container h-100 p-3">
-        <div className="heading text-center">
-          <h1>Testimonials</h1>
-        </div>
-        <div className="testimonials-items">
-          <Slider {...settings} className='slidera m-1'>
-            {data.map((data) => (
-              <div className='testimonials-item p-5 m-4 text-center'>
-                <img src={image} alt='imag' className='image' />
-                <h5>{data.name}</h5>
-                <p>{data.paragraph}</p>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
+      <Slider {...settings}>
+        {data.map((data) => (
+          <div className='testimonials-item ' key={data.id}>
+            <img src={data.img} alt='imag' className='image' />
+            <h5>{data.name}</h5>
+          </div>
+        ))}
+      </Slider>
     </div>
   )
 }
