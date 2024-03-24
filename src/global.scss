@@ -3,12 +3,12 @@
 // Mixin for media queries with breakpoints
 @mixin respond-to($breakpoint) {
     @if $breakpoint == "x-small" {
-      @media (max-width: 360px) {
+      @media (max-width: 455px) {
         @content;
       }
     } 
     @else if $breakpoint == "small" {
-      @media (min-width: 361px) and (max-width: 768px) {
+      @media (max-width: 768px) {
         @content;
       }
     } 

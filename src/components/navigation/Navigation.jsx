@@ -53,13 +53,8 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
-function Navigation({darkMode, handleDarkModeChange}) {
-  const [toggle, setToggle] = useState(false);
+function Navigation({darkMode, handleDarkModeChange,toggle,toggleHandler}) {
 
-
-  const toggleHandler = () =>{
-    setToggle(!toggle);
-  }
 
   return (
     <div className={darkMode ? "navigation" : 'navigation'}>
@@ -68,15 +63,15 @@ function Navigation({darkMode, handleDarkModeChange}) {
         <div className="list">
         <div className="toggle" onClick={toggleHandler}><FontAwesomeIcon icon={faBars} /></div>
           <ul className={toggle ?  " listItems toggleOpen " :  'listItems toggleClose '}>
-            <li><a href='#'>Home</a></li>
-            <li><a href='#'>About Us</a></li>
-            <li><a href='#'>Contact Me</a></li>
-            <li><a href='#'>Blog</a></li>
-            <li><a href='#'>Education</a></li>
-            <li><a href='#'>Experience</a></li>
-            <li><a href='#'>My Works</a></li>
-            <li><a href='#'>Skills</a></li>
-            <li><a href='#'>Testimonials</a></li>
+            <li><a href='#home' >Home</a></li>
+            <li><a href='#about'>About Us</a></li>
+            <li><a href='#contact'>Contact Me</a></li>
+            <li><a href='#blog'>Blog</a></li>
+            <li><a href='#education'>Education</a></li>
+            <li><a href='#experience'>Experience</a></li>
+            <li><a href='#myworks'>My Works</a></li>
+            <li><a href='#skills'>Skills</a></li>
+            <li><a href='#testimonials'>Testimonials</a></li>
           </ul>
         </div>
         <div className="icon">

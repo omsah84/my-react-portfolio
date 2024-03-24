@@ -1,25 +1,26 @@
-.app{
-
-
+@import "./global.scss";
+.app {
+  height: 100%;
 }
 
+.light-mode {
+  background-color: var(--dark);
+  color           : var(--dark-color);
 
-.light-mode{
-    background-color:var(--dark);
+  a {
     color: var(--dark-color);
-    a{
-        color: var(--dark-color);
-        
-      }
-   
-    
+  }
 }
 
-.dark-mode{
-    background-color:var(--light);
+.dark-mode {
+  background-color: var(--light);
+  color           : var(--light-color);
+
+  a {
+    color: var(--light-color);
     
-    a{
-        color: var(--light-color);
-        
-      }
+    @include respond-to(medium){
+     color:white;
+    }
+  }
 }

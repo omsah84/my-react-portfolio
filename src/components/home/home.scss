@@ -1,48 +1,74 @@
 @import "../../global.scss";
+@import 'bootstrap';
 
-.home {
-    display: flex;
-    width  : 100%;
+
+#home {
+    display       : flex;
+    flex-direction: row;
+
+    @include respond-to(small){
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+
     .left {
-        // width          : 60%;
-        flex-basis: 50%;
+        flex-basis     : 50%;
         display        : flex;
         flex-direction : column;
         justify-content: center;
-        // padding-left   : 200px;
 
-        @include mobile {
-            // flex-direction: column;
-            flex-basis: 100%;
+        h5{
+            @include respond-to(small){
+                margin-top: 10px;
+                 font-size: 12px;
+            }
         }
+        h1{
+            @include respond-to(small){
+                 font-size: 14px;
+            }
+        }
+
+        h2{
+            @include respond-to(small){
+                 font-size: 14px;
+            }
+        }
+        @include respond-to(small){
+            text-align: center;
+        }
+
         spam {
             color: red;
         }
 
         .icon {
-            > * {
-                font-size: 40px;
+            a {
+                text-decoration: none;
+                @include respond-to(x-small){
+                    font-size: 6px;
+                }
+            }
+
+            >* {
+                font-size: 25px;
                 margin   : 5px 0px;
             }
         }
 
-        button {
-            border-radius: 10px;
-            padding      : 3px;
+        .btn{
+            @include respond-to(x-small){
+                font-size: 10px;
+            }
         }
     }
 
     .right {
-        // width: 40%;
         flex-basis: 50%;
 
-        @include mobile {
-            display: none;
-        }
-
         .image {
-            width          : 100%;
-            height         : 100%;
             display        : flex;
             align-items    : center;
             justify-content: flex-end;
@@ -50,11 +76,14 @@
             img {
                 width : 350px;
                 height: 350px;
+                transition        : 0.9s;
+                @include respond-to(small){
+                    width: 200px;
+                    height: 200px;
+                }
 
-                @include mobile {
-                    display: none;
-                    width  : 100%;
-                    height : 100%;
+                &:hover{
+                    transform: scale(1.1,1.1);
                 }
             }
         }
