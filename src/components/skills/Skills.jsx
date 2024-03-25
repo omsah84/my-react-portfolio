@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./skills.scss";
 import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
