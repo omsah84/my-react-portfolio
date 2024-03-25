@@ -1,6 +1,79 @@
 @import "../../global.scss";
 
-#portfolio{
-    background-color: red;
-    
+
+#portfolio {
+
+    .container {
+        width                : 100%;
+        display              : grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        justify-items: center;
+        padding: 5px;
+        margin: 5px auto;
+
+        // @include respond-to(medium){
+        //     grid-template-columns: 1fr 1fr 1fr;
+        // }
+       
+        .item {
+            height: 250px;
+            width : 250px;
+            position: relative;
+            margin: 9px;
+            // box-shadow: 0px 0px 9px rgb(168, 235, 12);
+
+            img {
+                border-radius: 10px;
+                width : 100%;
+                height: 100%;
+                transition: 1s;
+                animation: scaleInOutP 4s ease-in-out infinite;
+            }
+
+            .layer{
+                position: absolute;
+                // border: 3px solid green;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transform: scale(0,0);
+                transition: 1s;
+                background-color: rgb(17, 17, 255) !important;
+                opacity: 0.7;
+                border-radius: 19px;
+                color: white!important;
+                font-size: 24px;
+
+                a{
+                    color: white !important;
+                }
+                
+            }
+
+            &:hover .layer{
+                transform: scale(1,1);
+            }
+        }
+    }
+
+}
+
+
+@keyframes scaleInOutP {
+    0% {
+        transform: scale(1); // Initial scale (normal size)
+         box-shadow: 0px 0px 9px rgb(168, 235, 12);
+        }
+        50% {
+            transform: scale(0.9); // Scale in to 120% size
+            box-shadow: 0px 0px 9px rgb(168, 235, 12);
+        }
+        100% {
+            transform: scale(1); // Scale back to normal size
+            box-shadow: 0px 0px 9px rgb(168, 235, 12);
+    }
 }
