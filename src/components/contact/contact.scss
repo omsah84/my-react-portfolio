@@ -3,7 +3,7 @@
 #contact {
     box-shadow    : 0px 0px 5px gray;
     padding-bottom: 20px;
-    height: 456px;
+    height: 460px;
 
     .right {
         width : 90%;
@@ -66,6 +66,10 @@
                 font-weight     : 500;
                 background-color: aqua !important;
             }
+        }
+
+        .content{
+            text-align: center;
         }
     }
 }

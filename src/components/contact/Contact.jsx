@@ -49,7 +49,7 @@ export default function Contact() {
                         <div className='submitbtn'>
                             <button className='btn w-75'>Submit</button>
                         </div>
-                        {isSubmited ? <></> : <div className='text-danger m-1'>Successfully Submitted.</div>}
+                        {isSubmited ? <></> : <div className='text-danger content'>Successfully Submitted.</div>}
                     </form>
                 </div>
             </div>

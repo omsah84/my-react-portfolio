@@ -135,7 +135,7 @@ export default function Skills() {
               '& > legend': { mt: 2 },
             }}
           >
-            <Typography component="legend">Styled Component</Typography>
+            <Typography component="legend">StyledComponent</Typography>
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>

@@ -3,9 +3,18 @@
 .light-mode {
   background-color: var(--dark);
   color           : var(--dark-color);
+
   a {
     color: var(--dark-color);
-    
+  }
+
+  input {
+    color: var(--dark-color);
+  }
+
+  textarea {
+    color: var(--dark-color);
+
   }
 }
 
@@ -14,24 +23,34 @@
   color           : var(--light-color);
 
   a {
-    color: var(--light-color);
+    color    : var(--light-color);
     font-size: 900;
+  }
+
+  input {
+    color: var(--light-color);
+  }
+
+  textarea {
+    color: var(--light-color);
+
   }
 }
 
 
-.section{
-  display: flex;
-  flex-direction: row;
+.section {
+  display        : flex;
+  flex-direction : row;
   justify-content: space-around;
+
   // border: 3px solid red;
   // margin-bottom: 20px;
-  div{
+  div {
     flex-basis: 50%;
-    padding: 5px;
+    padding   : 5px;
   }
 
-  @include respond-to(small){
+  @include respond-to(small) {
     flex-direction: column;
   }
 
