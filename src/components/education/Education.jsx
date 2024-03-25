@@ -1,10 +1,10 @@
 import React from 'react'
-import './education.scss'
+// import './education.scss'
 
 export default function Education() {
   return (
-    <div className='education' id='education'>
-   
+    <div id='education'>
+    
     </div>
   )
 }

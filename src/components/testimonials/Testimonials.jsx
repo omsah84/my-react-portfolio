@@ -117,7 +117,7 @@ export default function Testimonials() {
         {data.map((data) => (
           <div className='testimonials-item ' key={data.id}>
             <img src={data.img} alt='imag' className='image' />
-            <h5>{data.name}</h5>
+            <h6>{data.name}</h6>
           </div>
         ))}
       </Slider>

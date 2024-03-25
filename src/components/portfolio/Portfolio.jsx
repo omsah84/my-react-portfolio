@@ -47,36 +47,13 @@ const data = [
     image: PersonalWebsite,
     url: "https://omsah84.github.io/omsah-website/",
   },
-  // {
-  //   id: 7,
-  //   title: "Ecommerce Website",
-  //   image: "image",
-  //   url: "https://www.google.com",
-  // },
-  // {
-  //   id: 8,
-  //   title: "Blogging Website",
-  //   image: "image",
-  //   url: "https://www.google.com",
-  // },
-  // {
-  //   id: 9,
-  //   title: "Travel Website",
-  //   image: "image",
-  //   url: "https://www.google.com",
-  // },
-  // {
-  //   id: 6,
-  //   title: "WordPress Responsive Website",
-  //   image: "image",
-  //   url: "https://www.google.com",
-  // },
+ 
 ];
 
 export default function Portfolio() {
   return (
     <div id='portfolio'>
-      <h2 className='text-center p-2 mt-3'>MY Works</h2>
+      <h2 className='text-center mt-4'>MY WORKS</h2>
       <div className="container">
         {data.map((item) => {
           return (

@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import './contact.scss'
-import contactImage from './contactImage.png'
 
 export default function Contact() {
     const [isSubmited, setIsSubmited] = useState(true);
-
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -28,41 +26,32 @@ export default function Contact() {
             email: '',
             comment: ''
         });
-        
-        setTimeout(()=> setIsSubmited(true),1000);
-
+        setTimeout(() => setIsSubmited(true), 1000);
     };
 
     return (
         <div id='contact'>
-            <h2 className='text-center m-2'>Contact Us</h2>
-            <div className="container">
-                <div className="left">
-                    <img src={contactImage} alt='contactImg' />
-                </div>
-
+            <h2 className='text-center'>CONTACT US</h2>
                 <div className="right">
                     <form onSubmit={onClickHandler}>
-                        <div>
+                        <div className='section'>
                             <label>Name</label>
-                            <input type='text' className='card' name="name" required value={formData.name} onChange={onChanged} placeholder='Enter your name' /><br />
+                            <input type='text' name="name" className='no-outline' required value={formData.name} onChange={onChanged} placeholder='Name' />
                         </div>
-                        <div>
+                        <div className='section'>
                             <label>Email</label>
-                            <input type='email' className='card' name="email" required value={formData.email} onChange={onChanged}  placeholder='Enter your name' /><br />
+                            <input type='email' name="email" className='no-outline' required value={formData.email} onChange={onChanged} placeholder='Email' />
                         </div>
-                        <div>
-                            <label>Comment</label>
-                            <textarea type='text' className='card' name="comment" required value={formData.comment} onChange={onChanged}  placeholder='Enter your name' /><br />
+                        <div className='section'>
+                            <label>Message</label>
+                            <textarea type='text' name="comment" className='no-outline' required value={formData.comment} onChange={onChanged} placeholder='Message' />
                         </div>
                         <div className='submitbtn'>
-                            <button className='btn  bg-success'>Submit</button>
+                            <button className='btn w-75'>Submit</button>
                         </div>
-                       {isSubmited?<></> : <div className='text-danger m-1'>Successfully Submitted.</div>}
+                        {isSubmited ? <></> : <div className='text-danger m-1'>Successfully Submitted.</div>}
                     </form>
                 </div>
             </div>
-
-        </div>
     )
 }

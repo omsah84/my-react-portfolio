@@ -6,10 +6,8 @@ export default function Footer() {
   return (
     <div className='footer'>
       <div class="copyright">
-        <p> Copyright OmSah, Made with <FaHeart className='text-danger' /> by Om Prakash Sah</p>
+        <p> Copyright Om Sah, Made with <FaHeart className='text-danger' /> by Om Prakash Sah</p>
       </div>
-
-      
     </div>
   )
 }

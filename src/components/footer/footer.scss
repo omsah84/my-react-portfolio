@@ -1,23 +1,17 @@
 @import "../../global.scss";
 
 .footer{
-    background-color: black;
-    // width: 100vw;
-    // height: 70px;
+    width: 100%;
+    margin-top: 9px;
+
     .copyright{
         width:100%;
         text-align: center;
-        padding: 10px 2px;
-        // background: #262626;
-        font-weight: 300;
-        margin-top: 10px;
-        font-size: 30px;
-        // background-color: red;
+        font-weight: 400;
+        padding: 6px;
 
-        @include mobile{
-            font-size:20px;
+        @include respond-to(small){
+            font-size: 12px;
         }
-    }
-
-    
+    } 
 }

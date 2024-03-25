@@ -14,8 +14,10 @@
         flex-direction  : column;
         width: 100%;
         transition: 0.6s;
-        margin: 5px;
+        margin: 5px auto;
         padding: 10px;
+        // background-color: red;
+        // border: 3px solid red;
       
         &:hover{
             transform: scale(1.1,1.1);
@@ -23,24 +25,27 @@
     }
     .image {
         height       : 270px;
-        width        : 250px;
+        width        : 255px;
         margin: 0px auto;
         padding: 2px;
         border-radius: 15px;
         background-color: rgb(58, 51, 51);
     }
 
-    h5{
+    h6{
         text-align: center;
-        margin-top: 10px;
+        margin-top: 4px;
     }
 }
 
 
 .slick-prev {
-    left: 3px !important
+    left: 1px !important;
+    z-index: 1;
+    display: none !important;
   }
   
   .slick-next {
-    right: -9px !important
+    right: -5px !important;
+    display: none !important;
   }

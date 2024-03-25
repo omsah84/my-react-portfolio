@@ -7,8 +7,8 @@ import Typography from '@mui/material/Typography';
 export default function Skills() {
   return (
     <div id='skills'>
-      <h2 className='text-center p-3'>SKILLS</h2>
-      <div className="container">
+      <h2 className='text-center'>SKILLS</h2>
+      <div className="container ">
         <div className='item text-center'>
           <Box
             sx={{
@@ -29,7 +29,7 @@ export default function Skills() {
             <Rating name="read-only" value={4} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center'>
+        <div className='item text-center mobile'>
           <Box
             sx={{
               '& > legend': { mt: 2 },
@@ -39,7 +39,7 @@ export default function Skills() {
             <Rating name="read-only" value={4} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center'>
+        <div className='item text-center mobile'>
           <Box
             sx={{
               '& > legend': { mt: 2 },
@@ -59,7 +59,7 @@ export default function Skills() {
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center'>
+        <div className='item text-center mobile'>
           <Box
             sx={{
               '& > legend': { mt: 2 },
@@ -99,7 +99,7 @@ export default function Skills() {
             <Rating name="read-only" value={4} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center'>
+        <div className='item text-center mobile'>
           <Box
             sx={{
               '& > legend': { mt: 2 },
@@ -109,7 +109,7 @@ export default function Skills() {
             <Rating name="read-only" value={4} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center'>
+        <div className='item text-center mobile' >
           <Box
             sx={{
               '& > legend': { mt: 2 },
@@ -119,7 +119,7 @@ export default function Skills() {
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center'>
+        <div className='item text-center mobile'>
           <Box
             sx={{
               '& > legend': { mt: 2 },
@@ -129,7 +129,7 @@ export default function Skills() {
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center'>
+        <div className='item text-center mobile'>
           <Box
             sx={{
               '& > legend': { mt: 2 },
@@ -155,11 +155,21 @@ export default function Skills() {
               '& > legend': { mt: 2 },
             }}
           >
+            <Typography component="legend">Git & Github</Typography>
+            <Rating name="read-only" value={4} max={5} readOnly className='text-primary' />
+          </Box>
+        </div>
+        <div className='item text-center'>
+          <Box
+            sx={{
+              '& > legend': { mt: 2 },
+            }}
+          >
             <Typography component="legend">Node.js</Typography>
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center'>
+        <div className='item text-center mobile'>
           <Box
             sx={{
               '& > legend': { mt: 2 },
@@ -169,7 +179,7 @@ export default function Skills() {
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center'>
+        <div className='item text-center mobile'>
           <Box
             sx={{
               '& > legend': { mt: 2 },
@@ -179,7 +189,7 @@ export default function Skills() {
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center'>
+        <div className='item text-center mobile'>
           <Box
             sx={{
               '& > legend': { mt: 2 },
@@ -189,7 +199,7 @@ export default function Skills() {
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center'>
+        <div className='item text-center mobile'>
           <Box
             sx={{
               '& > legend': { mt: 2 },
@@ -219,7 +229,7 @@ export default function Skills() {
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center'>
+        <div className='item text-center mobile'>
           <Box
             sx={{
               '& > legend': { mt: 2 },
@@ -246,7 +256,7 @@ export default function Skills() {
             }}
           >
             <Typography component="legend">AI & ML</Typography>
-            <Rating name="read-only" value={2} max={5} readOnly className='text-primary' />
+            <Rating name="read-only" value={1} max={5} readOnly className='text-primary' />
           </Box>
         </div>
 

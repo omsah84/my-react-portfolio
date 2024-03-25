@@ -18,3 +18,21 @@
     font-size: 900;
   }
 }
+
+
+.section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  // border: 3px solid red;
+  // margin-bottom: 20px;
+  div{
+    flex-basis: 50%;
+    padding: 5px;
+  }
+
+  @include respond-to(small){
+    flex-direction: column;
+  }
+
+}
