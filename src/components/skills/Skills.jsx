@@ -76,7 +76,7 @@ export default function Skills() {
             }}
           >
             <Typography component="legend">Bootstrap</Typography>
-            <Rating name="read-only" value={4} max={5} readOnly className='text-primary' />
+            <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
         <div className='item text-center'>
@@ -106,7 +106,7 @@ export default function Skills() {
             }}
           >
             <Typography component="legend">SASS</Typography>
-            <Rating name="read-only" value={4} max={5} readOnly className='text-primary' />
+            <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
         <div className='item text-center mobile'>
@@ -116,7 +116,7 @@ export default function Skills() {
             }}
           >
             <Typography component="legend">JSX</Typography>
-            <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
+            <Rating name="read-only" value={2} max={5} readOnly className='text-primary' />
           </Box>
         </div>
         <div className='item text-center mobile' >
@@ -179,7 +179,7 @@ export default function Skills() {
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center mobile'>
+        {/* <div className='item text-center mobile'>
           <Box
             sx={{
               '& > legend': { mt: 2 },
@@ -188,7 +188,7 @@ export default function Skills() {
             <Typography component="legend">Next.js</Typography>
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
-        </div>
+        </div> */}
         <div className='item text-center'>
           <Box
             sx={{
@@ -229,7 +229,7 @@ export default function Skills() {
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center mobile'>
+        {/* <div className='item text-center mobile'>
           <Box
             sx={{
               '& > legend': { mt: 2 },
@@ -248,7 +248,7 @@ export default function Skills() {
             <Typography component="legend">SQL</Typography>
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
-        </div>
+        </div> */}
         <div className='item text-center'>
           <Box
             sx={{
