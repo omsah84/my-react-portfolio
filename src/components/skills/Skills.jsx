@@ -69,7 +69,7 @@ export default function Skills() {
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center'>
+        <div className='item text-center mobile'>
           <Box
             sx={{
               '& > legend': { mt: 2 },
@@ -85,11 +85,21 @@ export default function Skills() {
               '& > legend': { mt: 2 },
             }}
           >
+            <Typography component="legend">Tailwind</Typography>
+            <Rating name="read-only" value={4} max={5} readOnly className='text-primary' />
+          </Box>
+        </div>
+        <div className='item text-center'>
+          <Box
+            sx={{
+              '& > legend': { mt: 2 },
+            }}
+          >
             <Typography component="legend">React.js</Typography>
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center'>
+        <div className='item text-center mobile'>
           <Box
             sx={{
               '& > legend': { mt: 2 },
@@ -106,7 +116,7 @@ export default function Skills() {
             }}
           >
             <Typography component="legend">JSX</Typography>
-            <Rating name="read-only" value={4} max={5} readOnly className='text-primary' />
+            <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
         <div className='item text-center mobile' >
@@ -139,6 +149,26 @@ export default function Skills() {
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
+        <div className='item text-center mobile'>
+          <Box
+            sx={{
+              '& > legend': { mt: 2 },
+            }}
+          >
+            <Typography component="legend">Axios</Typography>
+            <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
+          </Box>
+        </div>
+        <div className='item text-center mobile'>
+          <Box
+            sx={{
+              '& > legend': { mt: 2 },
+            }}
+          >
+            <Typography component="legend">Redux</Typography>
+            <Rating name="read-only" value={2} max={5} readOnly className='text-primary' />
+          </Box>
+        </div>
         <div className='item text-center'>
           <Box
             sx={{
@@ -146,6 +176,16 @@ export default function Skills() {
             }}
           >
             <Typography component="legend">FireBase</Typography>
+            <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
+          </Box>
+        </div>
+        <div className='item text-center mobile'>
+          <Box
+            sx={{
+              '& > legend': { mt: 2 },
+            }}
+          >
+            <Typography component="legend">Next.js</Typography>
             <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
           </Box>
         </div>
@@ -259,9 +299,26 @@ export default function Skills() {
             <Rating name="read-only" value={1} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-
-
-
+        <div className='item text-center mobile'>
+          <Box
+            sx={{
+              '& > legend': { mt: 2 },
+            }}
+          >
+            <Typography component="legend">SDLC</Typography>
+            <Rating name="read-only" value={1} max={5} readOnly className='text-primary' />
+          </Box>
+        </div>
+        <div className='item text-center mobile'>
+          <Box
+            sx={{
+              '& > legend': { mt: 2 },
+            }}
+          >
+            <Typography component="legend">MDLC</Typography>
+            <Rating name="read-only" value={1} max={5} readOnly className='text-primary' />
+          </Box>
+        </div>
       </div>
     </div>
   )
