@@ -1,5 +1,5 @@
-import React from 'react'
-import './portfolio.scss'
+import React, { useState } from "react";
+import "./portfolio.scss";
 import Matnest from "../../asset/matnest.png";
 import Nandu from "../../asset/nanduBanner.png";
 import Om from "../../asset/omBanner.png";
@@ -7,10 +7,10 @@ import PersonalWebsite from "../../asset/PersonalWebsite.png";
 import Sikendar from "../../asset/sikendarBanner.png";
 import GUI from "../../asset/gui.png";
 import Via from "../../asset/Via.png";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import Omsah from "../../asset/omsah.png";
-
+import Button from "@mui/material/Button";
 
 const data = [
   {
@@ -61,26 +61,45 @@ const data = [
     image: Omsah,
     url: "https://omsah.netlify.app/",
   },
- 
 ];
 
 export default function Portfolio() {
+  const [click, setClick] = useState(false);
+
+  const dataToShow =
+    click && true ? data.slice(0, data.length) : data.slice(0, 4);
+
+  const onClickChange = () => {
+    setClick(!click);
+  };
+
   return (
-    <div id='portfolio'>
-      <h2 className='text-center mt-4'>MY WORKS</h2>
+    <div id="portfolio">
+      <h2 className="text-center mt-4">MY WORKS</h2>
       <div className="container">
-        {data.map((item) => {
+        {dataToShow.map((item, idx) => {
           return (
-            <div className="item" key={item.id}>
+            <div className="item" key={idx}>
               <img src={item.image} alt="banner" />
               <div className="layer">
                 <div className="item-list text-center">{item.title}</div>
-                <a href={item.url}><FontAwesomeIcon icon={faUpRightFromSquare} /></a>
+                <a href={item.url}>
+                  <FontAwesomeIcon icon={faUpRightFromSquare} />
+                </a>
               </div>
             </div>
-          )
+          );
         })}
       </div>
+      <div className="text-center mb-4">
+        <Button
+          variant="outlined"
+          sx={{ textTransform: "capitalize" }}
+          onClick={onClickChange}
+        >
+          {click && true ? "See less.." : "See more."}
+        </Button>
+      </div>
     </div>
-  )
+  );
 }

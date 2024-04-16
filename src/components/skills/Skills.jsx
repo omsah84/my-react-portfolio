@@ -119,16 +119,6 @@ export default function Skills() {
             <Rating name="read-only" value={2} max={5} readOnly className='text-primary' />
           </Box>
         </div>
-        <div className='item text-center mobile' >
-          <Box
-            sx={{
-              '& > legend': { mt: 2 },
-            }}
-          >
-            <Typography component="legend">React BootStrap</Typography>
-            <Rating name="read-only" value={3} max={5} readOnly className='text-primary' />
-          </Box>
-        </div>
         <div className='item text-center mobile'>
           <Box
             sx={{
