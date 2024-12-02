@@ -35,6 +35,8 @@
 #home {
     display       : flex;
     flex-direction: row;
+    height: 80vh;
+    align-items: center;
 
     @include respond-to(small) {
         flex-direction : column-reverse;
@@ -111,6 +113,8 @@
             img {
                 width     : 350px;
                 height    : 350px;
+                border-radius: 50%;
+                box-shadow: 0px 0px 600px 20px red;
                 transition: 0.9s;
                 animation: scaleInOut 5s ease-in-out infinite;
                
